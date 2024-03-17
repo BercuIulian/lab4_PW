@@ -246,17 +246,18 @@ footer {
 }
 
 .tooltip {
-    visibility: hidden; /* Hide the tooltip by default */
-    position: absolute;
-    bottom: 100%;
-    right: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
+  visibility: hidden; /* Hide the tooltip by default */
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: visibility 0.3s ease; /* Add transition for smooth visibility change */
 }
 
 @media only screen and (max-width: 768px) {
@@ -273,4 +274,16 @@ footer {
         font-size: 12px; /* Adjust the font size for mobile */
         padding: 3px 6px; /* Adjust the padding for mobile */
     }
+}
+
+.order-button {
+  margin-top: 20px; /* Adjust the margin-top value as needed */
+}
+
+.corner-image:hover {
+  filter: brightness(80%); /* Adjust the brightness to darken the image on hover */
+}
+
+.corner-image-container:hover .tooltip {
+  visibility: visible; /* Show the tooltip when hovering over the container */
 }

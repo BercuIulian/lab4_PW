@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Factory</title>
+    
     <link rel="stylesheet" href="reset.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Cookie Factory! Where love is made</h1>
-        <nav>
-            <ul>
-                <li><a href="#about" id="about-button">About Us</a></li>
-                <li><a href="#products" id="products-button">Our Products</a></li>
-                <li><a href="#contact" id="contact-button">Contact Us</a></li>
-            </ul>
-        </nav>
+    <header class="bg-light">
+        <div class="container">
+            <h1 class="text-center py-4">Welcome to the Cookie Factory! Where love is made</h1>
+            <nav class="text-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#about" class="text-dark">About Us</a></li>
+                    <li class="list-inline-item"><a href="#products" class="text-dark">Our Products</a></li>
+                    <li class="list-inline-item"><a href="#contact" class="text-dark">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="hero-section">
-            <div class="hero-content">
-                <h2>Delicious Cookies Made with Love</h2>
-                <p>Order now and get 20% off your first purchase!</p>
-                <a href="products.html"><button>Order Now</button></a>
+        <section id="hero-section" class="bg-primary text-white">
+            <div class="container text-center">
+                <h2 class="display-4">Delicious Cookies Made with Love</h2>
+                <p class="lead">Order now and get 20% off your first purchase!</p>
+                <a href="products.html" class="btn btn-lg btn-warning" class="order-button">Order Now</a>
             </div>
         </section>
-        <section id="about-section">
+        <section id="about-section" class="py-5">
+	    <div class="container">
             <h2>About Us</h2>
             <p>Welcome to the Cookie Factory! We are a family-owned business that has been baking delicious cookies for over 20 years. Our secret recipes and high-quality ingredients ensure that every bite is a taste of heaven.</p>
-        </section>
+            </div>
+	</section>
         <section id="products-section">
             <h2>Our Products</h2>
             <p>Check out our delicious cookie flavors:</p>
@@ -60,14 +67,20 @@
             <h2>Special Offer for Mobile Users</h2>
             <p>Get an extra 10% off your purchase with code MOBILE10!</p>
         </section>
+<div class="corner-image-container">
+    		<img src="mascot.png" alt="Corner Image" class="corner-image" id="cornerImage">
+    		<span class="tooltip">Welcome to my factory!</span>
+	</div>
 	
 
     </main>
-    <footer>
-        <p>&copy; 2024 Cookie Factory. All rights reserved.</p>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Cookie Factory. All rights reserved.</p>
+        </div>
     </footer>
 
-	<img src="mascot.png" alt="Corner Image" class="corner-image" id="cornerImage">
+	
 <div class="corner-image-container">
         <img src="mascot.png" alt="Corner Image" class="corner-image" id="cornerImage">
         <span class="tooltip">Welcome to my factory!</span>
