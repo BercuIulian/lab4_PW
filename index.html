@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Factory</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Cookie Factory! Where love is made</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" id="about-button">About Us</a></li>
+                <li><a href="#products" id="products-button">Our Products</a></li>
+                <li><a href="#contact" id="contact-button">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero-section">
+            <div class="hero-content">
+                <h2>Delicious Cookies Made with Love</h2>
+                <p>Order now and get 20% off your first purchase!</p>
+                <a href="products.html"><button>Order Now</button></a>
+            </div>
+        </section>
+        <section id="about-section">
+            <h2>About Us</h2>
+            <p>Welcome to the Cookie Factory! We are a family-owned business that has been baking delicious cookies for over 20 years. Our secret recipes and high-quality ingredients ensure that every bite is a taste of heaven.</p>
+        </section>
+        <section id="products-section">
+            <h2>Our Products</h2>
+            <p>Check out our delicious cookie flavors:</p>
+            <ul>
+                <li>Chocolate Chip - $2.99</li>
+                <li>Oatmeal Raisin - $3.49</li>
+                <li>Sugar - $2.49</li>
+                <li>Snickerdoodle - $3.99</li>
+            </ul>
+        </section>
+        <section id="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have a question or feedback? Contact us at:</p>
+            <p>Email: info@cookiefactory.com</p>
+            <p>Phone: 069-123-123</p>
+        </section>
+
+        <section id="feedback-section">
+            <h2>Customer Feedback</h2>
+            <div class="feedback-item">
+                <p>"The cookies are amazing! My family loves them!" - John Doe</p>
+            </div>
+            <div class="feedback-item">
+                <p>"I've never tasted cookies this good before. Highly recommend!" - Jane Smith</p>
+            </div>
+        </section>
+	<section class="mobile-only-section">
+            <h2>Special Offer for Mobile Users</h2>
+            <p>Get an extra 10% off your purchase with code MOBILE10!</p>
+        </section>
+	
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Cookie Factory. All rights reserved.</p>
+    </footer>
+
+	<img src="mascot.png" alt="Corner Image" class="corner-image" id="cornerImage">
+<div class="corner-image-container">
+        <img src="mascot.png" alt="Corner Image" class="corner-image" id="cornerImage">
+        <span class="tooltip">Welcome to my factory!</span>
+    </div>
+
+    <script>
+        const aboutButton = document.getElementById('about-button');
+        const aboutSection = document.getElementById('about-section');
+
+        aboutSection.style.display = 'none';
+
+        aboutButton.addEventListener('click', function() {
+            if (aboutSection.style.display === 'none') {
+                aboutSection.style.display = 'block';
+            } else {
+                aboutSection.style.display = 'none';
+            }
+        });
+
+        const productsButton = document.getElementById('products-button');
+        const productsSection = document.getElementById('products-section');
+
+        productsSection.style.display = 'none';
+
+        productsButton.addEventListener('click', function() {
+            if (productsSection.style.display === 'none') {
+                productsSection.style.display = 'block';
+            } else {
+                productsSection.style.display = 'none';
+            }
+        });
+
+        const contactButton = document.getElementById('contact-button');
+        const contactSection = document.getElementById('contact-section');
+
+        contactSection.style.display = 'none';
+
+        contactButton.addEventListener('click', function() {
+            if (contactSection.style.display === 'none') {
+                contactSection.style.display = 'block';
+            } else {
+                contactSection.style.display = 'none';
+            }
+        });
+    </script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const orderButton = document.getElementById('order-button');
+            orderButton.addEventListener('click', function() {
+                window.location.href = 'products.html'; // Redirect to the products page
+            });
+        });
+    </script>
+</body>
+</html>
